@@ -1,0 +1,209 @@
+:root {
+  --black-b-color: #10100e;
+  --gray-d3-color: #191815;
+  --gray-d2-color: #30302b;
+  --gray-d1-color: #606055;
+  --gray-b-color: #c0c0ab;
+  --gray-l1-color: #e8e8cf;
+  --gray-l2-color: #f8f8dd;
+  --white-b-color: #ffffe3;
+}
+
+body {
+  /* flex */
+  display: flex;
+  flex-direction: column;
+  /* styling */
+  font-family: "SUSE", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--black-b-color);
+  color: var(--white-b-color);
+  text-align: center;
+}
+
+[type="button"] {
+  width: 75px;
+  height: 25px;
+  border: 1px solid var(--gray-d3-color);
+  border-radius: 0%;
+  text-decoration: none;
+  background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+}
+
+[type="button"]:hover {
+  background-color: var(--gray-l2-color);
+}
+
+[type="button"]:active {
+  background-color: var(--black-b-color);
+  border-color: var(--white-b-color);
+  color: var(--white-b-color);
+}
+
+#title {
+  font-size: 72pt;
+  text-align: center;
+}
+
+#app-container {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  gap: 1%;
+  padding: 5px;
+}
+
+#eas-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 1px solid var(--gray-d2-color); */
+  height: 500px;
+  width: 500px;
+  flex: 0 0 auto;
+}
+
+#control-panel {
+  display: flex;
+  flex: 0 0 150px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: var(--white-b-color);
+  color: var(--black-b-color);
+  padding: 5px;
+}
+
+#control-panel > div {
+  display: flex;
+  flex: 0 1 20%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#invisible-container {
+  flex: 0 0 10%;
+  visibility: hidden;
+}
+
+.grid-item {
+  background: var(--white-b-color);
+  border-left: 1px solid var(--gray-d2-color);
+  border-top: 1px solid var(--gray-d2-color);
+  box-sizing: border-box;
+}
+
+#grid-size-picker {
+  justify-content: space-between !important;
+}
+
+input[type="range"] {
+  --c: var(--gray-d2-color); /* active color */
+  --g: 2px; /* the gap */
+  --l: 1px; /* line thickness*/
+  --s: 12px; /* thumb size*/
+
+  --_c: color-mix(in srgb, var(--c), var(--gray-d2-color) var(--p, 0%));
+
+  width: 80%; /* input width */
+  height: var(--s);
+  appearance: none;
+  background: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+input[type="range"]:active,
+input[type="range"]:focus-visible {
+  --_b: var(--s);
+}
+
+/* chromium */
+input[type="range" i]::-webkit-slider-thumb {
+  height: var(--s);
+  aspect-ratio: 0.5;
+  border-radius: 0%;
+  box-shadow: 0 0 0 var(--_b,var(--l)) inset var(--c);
+  border-image: linear-gradient(90deg, var(--_c) 50%, var(--gray-b-color) 0) 0 1 /
+    calc(50% - var(--l) / 2) 100vw/0 calc(100vw + var(--g));
+  -webkit-appearance: none;
+  appearance: none;
+  transition: 0.3s;
+}
+/* Firefox */
+input[type="range"]::-moz-range-thumb {
+  height: var(--s);
+  width: var(--s);
+  background: none;
+  border-radius: 0%;
+  box-shadow: 0 0 0 var(--_b,var(--l)) inset var(--c);
+  border-image: linear-gradient(90deg, var(--_c) 50%, var(--gray-b-color) 0) 0 1 /
+    calc(50% - var(--l) / 2) 100vw/0 calc(100vw + var(--g));
+  -moz-appearance: none;
+  appearance: none;
+  transition: 0.3s;
+}
+
+#color-controls {
+  display: flex;
+  flex: 0 1 20%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--gray-d2-color);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+/* slider before */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 2px;
+  background-color: var(--white-b-color);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+/* input:checked + .slider {
+  background-color: var(--black-b-color);
+} */
+
+/* input bg before */
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}

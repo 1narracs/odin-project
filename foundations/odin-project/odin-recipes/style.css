@@ -1,0 +1,75 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 50;
+  margin: 0px;
+}
+
+.title {
+  text-align: center;
+  text-indent: -25%;
+}
+
+.title.home-title {
+  font-size: 40px;
+  margin: 0px auto;
+  padding: 24px 16px;
+  background-color: rgb(255, 235, 212);
+}
+
+.title.recipe-title {
+  font-size: 26px;
+  font-style: italic;
+  text-align: center;
+  text-indent: 10%;
+  margin-bottom: 0px;
+}
+
+.recipe-heading {
+  margin: auto;
+  align-content: right;
+}
+
+.home-link {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.recipe-list {
+  list-style-type: counter;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.descriptor {
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  background-color: rgb(255, 235, 212);
+}
+
+.ingredients li {
+  margin-bottom: 0px;
+}
+
+.ingredients-subheader {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 18px;
+  margin-bottom: 2.5px;
+  margin: 0 auto;
+}
+
+.method li {
+  margin-bottom: 5px;
+}
+
+.recipe-img {
+  display: block;
+  margin: 0 auto;
+  width: 375px;
+  height: 250px;
+  border-radius: 0px;
+  border: black dotted 2px;
+  padding: 2px;
+}

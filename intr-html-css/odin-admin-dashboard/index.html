@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/icons/logo.svg" type="image/svg" />
+    <title>O D I N: Admin Dashboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidenav">
+        <div class="logo">
+          <span class="logo-section"></span>
+          <span class="logo-section"></span>
+          <span class="logo-section"></span>
+          <span class="logo-section"></span>
+        </div>
+        <a href="#" class="sidenav-link" id="logo-text">Dashboard</a>
+        <span class="sidenav-gap"></span>
+        <a href="#" class="sidenav-icon" id="home-icon">
+          <img src="img/icons/home.svg" />
+        </a>
+        <a href="#" class="sidenav-link" id="home-link">Home</a>
+        <a href="#" class="sidenav-icon" id="profile-icon">
+          <img src="img/icons/profile.svg" />
+        </a>
+        <a href="#" class="sidenav-link" id="profile-link">Profile</a>
+        <a href="#" class="sidenav-icon" id="messages-icon">
+          <img src="img/icons/messages.svg" />
+        </a>
+        <a href="#" class="sidenav-link" id="messages-link">Messages</a>
+        <a href="#" class="sidenav-icon" id="history-icon">
+          <img src="img/icons/history.svg" />
+        </a>
+        <a href="#" class="sidenav-link" id="history-link">History</a>
+        <a href="#" class="sidenav-icon" id="tasks-icon">
+          <img src="img/icons/tasks.svg" />
+        </a>
+        <a href="#" class="sidenav-link" id="tasks-link">Tasks</a>
+        <a href="#" class="sidenav-icon" id="communities-icon">
+          <img src="img/icons/communities.svg" />
+        </a>
+        <a href="#" class="sidenav-link" id="communities-link">Communities</a>
+        <span class="sidenav-gap"></span>
+        <a href="#" class="sidenav-icon" id="settings-icon">
+          <img src="img/icons/settings.svg" />
+        </a>
+        <a href="#" class="sidenav-link" id="settings-link">Settings</a>
+        <a href="#" class="sidenav-icon" id="support-icon">
+          <img src="img/icons/support.svg" />
+        </a>
+        <a href="#" class="sidenav-link" id="support-link">Support</a>
+        <a href="#" class="sidenav-icon" id="privacy-icon">
+          <img src="img/icons/privacy.svg" />
+        </a>
+        <a href="#" class="sidenav-link" id="privacy-link">Privacy</a>
+      </div>
+      <div class="header">
+        <div id="header-section-search">
+          <img src="img/icons/search.svg" alt="search-icon" />
+          <input type="text" name="search-bar" id="search-bar" />
+        </div>
+        <div id="header-section-profile">
+          <a href="#" id="#notification-icon"
+            ><img src="img/icons/bell.svg" alt="notification-bell"
+          /></a>
+          <img
+            src="img/avis/man-avatar.png"
+            alt="current user icon"
+            class="avi cu-avi-thumb avi-small"
+          />
+          <div id="user-name-text">Morgan Oakley</div>
+        </div>
+        <div id="header-section-welcome">
+          <img
+            src="img/avis/man-avatar.png"
+            alt="current user icon big"
+            class="avi cu-avi-thumb avi-big"
+          />
+          <div class="greeting-display">
+            <p id="greeting">Hi there,</p>
+            <p id="current-user-full-handle">Morgan Oakey (@morgan)</p>
+          </div>
+        </div>
+        <div id="header-section-buttons">
+          <button class="btn-header">New</button>
+          <button class="btn-header">Upload</button>
+          <button class="btn-header">Share</button>
+        </div>
+      </div>
+      <div class="content">
+        <div class="your-projects-container">
+          <p class="content-title">Your Projects</p>
+          <div class="card-grid">
+            <div class="project-card card">
+              <h2 class="card-title">Super Cool Project</h2>
+              <p class="card-desc">
+                Sed tempus ut lacus ut scelerisque. Suspendisse sollictudin nibh
+                erat, id facilisis felis accumsan nec.
+              </p>
+              <div class="card-icons">
+                <a class="card-star" href="#"
+                  ><img src="img/icons/star.svg" alt=""
+                /></a>
+                <a class="card-watch" href="#"
+                  ><img src="img/icons/watch.svg" alt=""
+                /></a>
+                <a class="card-fork" href="#"
+                  ><img src="img/icons/code-fork.svg" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="project-card card">
+              <h2 class="card-title">Less Cool Project</h2>
+              <p class="card-desc">
+                Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque
+                sed dolor tincidunt, conectetur sapien et, facilisis dolor. Duis
+                sem purus, dignissim ut sapien in, varius pallentesque lacus.
+              </p>
+              <div class="card-icons">
+                <a class="card-star" href="#"
+                  ><img src="img/icons/star.svg" alt=""
+                /></a>
+                <a class="card-watch" href="#"
+                  ><img src="img/icons/watch.svg" alt=""
+                /></a>
+                <a class="card-fork" href="#"
+                  ><img src="img/icons/code-fork.svg" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="project-card card">
+              <h2 class="card-title">Impossible App</h2>
+              <p class="card-desc">
+                In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a
+                placerat velit sagittis id.
+              </p>
+              <div class="card-icons">
+                <a class="card-star" href="#"
+                  ><img src="img/icons/star.svg" alt=""
+                /></a>
+                <a class="card-watch" href="#"
+                  ><img src="img/icons/watch.svg" alt=""
+                /></a>
+                <a class="card-fork" href="#"
+                  ><img src="img/icons/code-fork.svg" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="project-card card">
+              <h2 class="card-title">Easy Peasy App</h2>
+              <p class="card-desc">
+                Etiam cursus ac efficitur fringilla. Vestibulum dignissim urna
+                eget accumsan aliquam. Curabitur dignissim nisi in tortor
+                commodo, ac bibendum magna tincidunt.
+              </p>
+              <div class="card-icons">
+                <a class="card-star" href="#"
+                  ><img src="img/icons/star.svg" alt=""
+                /></a>
+                <a class="card-watch" href="#"
+                  ><img src="img/icons/watch.svg" alt=""
+                /></a>
+                <a class="card-fork" href="#"
+                  ><img src="img/icons/code-fork.svg" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="project-card card">
+              <h2 class="card-title">Ad Blocker</h2>
+              <p class="card-desc">
+                Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus
+                vel, pharetra hendrerit felis. Aliquam sed malesuada eros.
+              </p>
+              <div class="card-icons">
+                <a class="card-star" href="#"
+                  ><img src="img/icons/star.svg" alt=""
+                /></a>
+                <a class="card-watch" href="#"
+                  ><img src="img/icons/watch.svg" alt=""
+                /></a>
+                <a class="card-fork" href="#"
+                  ><img src="img/icons/code-fork.svg" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="project-card card">
+              <h2 class="card-title">Money Maker</h2>
+              <p class="card-desc">
+                Praesent convallis, libero quis congue elementum, nunc ante
+                faucibus sapien, ac scelerisque tortor purus sit amet ex.
+                Pellentesque mollis nec sem vel aliquam.
+              </p>
+              <div class="card-icons">
+                <a class="card-star" href="#"
+                  ><img src="img/icons/star.svg" alt=""
+                /></a>
+                <a class="card-watch" href="#"
+                  ><img src="img/icons/watch.svg" alt=""
+                /></a>
+                <a class="card-fork" href="#"
+                  ><img src="img/icons/code-fork.svg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="side-container" id="announcements-container ">
+          <p class="content-title">Announcements</p>
+          <div class="announcements-card side-card card">
+            <div class="announcement">
+              <p class="announcement-title">Site Maintenance</p>
+              <p class="announcement-body">
+                Vestibulum condimentum tellus lacus, in accumsan elit maximus
+                ac. Donec hendrerit sodales congue...
+              </p>
+            </div>
+            <hr />
+            <div class="announcement">
+              <p class="announcement-title">Community Share Day</p>
+              <p class="announcement-body">
+                Nam vel lectus tincidunt, rutrum nulla eu, ornare libero.
+                Aliquam dictum accumsan porttitor...
+              </p>
+            </div>
+            <hr />
+            <div class="announcement">
+              <p class="announcement-title">Updated Privacy Policy</p>
+              <p class="announcement-body">
+                Phasellus efficitur nisi eget elit consectetur, eget condimentum
+                ante auctor. Cras fringilla sagittis sem in mattis...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="side-container" id="trending-container">
+          <p class="content-title">Trending</p>
+          <div class="trending-card side-card card">
+            <div class="trending-item">
+              <img
+                src="img/avis/sucrose-avatar.png"
+                alt=""
+                class="avi avi-small"
+              />
+              <div class="trending-project-text">
+                <p class="trending-user-handle">@tegan</p>
+                <p class="trending-project-name">World Peace Builder</p>
+              </div>
+            </div>
+            <div class="trending-item">
+              <img src="img/avis/man-avatar.png" alt="" class="avi avi-small" />
+              <div class="trending-project-text">
+                <p class="trending-user-handle">@morgan</p>
+                <p class="trending-project-name">Super Cool Project</p>
+              </div>
+            </div>
+            <div class="trending-item">
+              <img
+                src="img/avis/woman-avatar.png"
+                alt=""
+                class="avi avi-small"
+              />
+              <div class="trending-project-text">
+                <p class="trending-user-handle">@kendall</p>
+                <p class="trending-project-name">Life Changing App</p>
+              </div>
+            </div>
+            <div class="trending-item">
+              <img src="img/avis/dd-avatar.png" alt="" class="avi avi-small" />
+              <div class="trending-project-text">
+                <p class="trending-user-handle">@alex</p>
+                <p class="trending-project-name">No Traffic Maker</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        Uicons by <a href="https://www.flaticon.com/uicons">Flaticon</a>
+      </div>
+    </div>
+  </body>
+</html>

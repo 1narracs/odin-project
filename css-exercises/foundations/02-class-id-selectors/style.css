@@ -1,0 +1,19 @@
+.p-base {
+  font-family: Verdana, "DejaVu Sans", sans-serif;
+  background-color: pink;
+}
+
+.big {
+  font-size: 24px;
+}
+
+#div-one {
+  color: blue;
+  font-size: 36px;
+}
+
+#div-two {
+  background-color: lightgreen;
+  font-size: 24px;
+  font-weight: bold;
+}

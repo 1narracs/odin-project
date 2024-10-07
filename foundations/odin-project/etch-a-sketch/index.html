@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Etch-a-Sketch</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script type="text/javascript" src="eas.js" async></script>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=SUSE&display=swap");
+  </style>
+</head>
+
+<body>
+  <div id="title">Etch-a-Sketch</div>
+  <div id="app-container">
+    <div id="control-panel">
+      <div id="grid-size-picker">
+        <label for="grid-size-range">Grid Size</label>
+        <input
+          type="range"
+          id="grid-size-range"
+          name="grid-size-range"
+          min="2"
+          max="100"
+          value="16"
+        />
+        <div id="grid-size-range-display">16 x 16</div>
+        <input
+          type="button"
+          id="resize-button"
+          value="resize"
+          onclick="makeGrid(gridSize);"
+        />
+      </div>
+      <div id="color-controls">
+        <label class="switch">
+          <input
+            type="checkbox"
+            id="color-randomiser"
+            name="color-randomiser"
+          />
+          <span class="slider"></span>
+        </label>
+        <div id="random-color-label">randomise colors</div>
+      </div>
+      <div id="clear-grid-container">
+        <input
+          type="button"
+          id="clear-grid-button"
+          value="clear"
+          onclick="makeGrid(gridSize, clear=true);"
+        />
+      </div>
+    </div>
+    <div id="eas-container"></div>
+    <div id="invisible-container"></div>
+  </div>
+</body>

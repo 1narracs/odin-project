@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+    </style>
+
+    <script src="objects.js" defer></script>
+
+    <title>Objects</title>
+  </head>
+  <body>
+    <div class="header playfair-display"><p>The Library</p></div>
+    <div class="new-book-form-container">
+      <form action="" class="new-book-form">
+        
+          <label for="title-input">Enter Title:</label>
+          <input type="text" name="title-input" id="title" required />
+
+        
+          <label for="author-input">Enter Author:</label>
+          <input type="text" name="author-input" id="author" required />
+     
+          <label for="pages-input">Enter Pages:</label>
+          <input
+            type="text"
+            name="pages-input"
+            id="pages"
+            pattern="^[0-9]*$"
+            maxlength="5"
+            required
+          />
+        
+        
+          <label for="read-input">Read?</label>
+          <input type="checkbox" name="read-input" id="read" />
+   
+        <button class="btn-submit playfair-display" id="submit">Add</button>
+      </form>
+      <div id="error-label"></div>
+    </div>
+    <table id="library-table">
+      <thead>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Pages</th>
+        <th>Read?</th>
+        <th>read</th>
+        <th>del</th>
+      </thead>
+      <tbody id="library-table-body">
+
+      </tbody>
+    </table>
+  </body>
+</html>

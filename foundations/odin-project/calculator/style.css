@@ -1,0 +1,141 @@
+:root {
+  --black-b-color: #10100e;
+  --gray-d3-color: #191815;
+  --gray-d2-color: #30302b;
+  --gray-d1-color: #606055;
+  --gray-b-color: #c0c0ab;
+  --gray-l1-color: #e8e8cf;
+  --gray-l2-color: #f8f8dd;
+  --white-b-color: #ffffe3;
+}
+
+body {
+  /* flex */
+  display: flex;
+  justify-content: center;
+  /* styling */
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  background-color: var(--black-b-color);
+  color: var(--white-b-color);
+  text-align: center;
+}
+
+button {
+  width: 75px;
+  height: 50px;
+  border: 1px solid var(--gray-d3-color);
+  border-radius: 0%;
+  text-decoration: none;
+  background-color: var(--gray-d3-color);
+  color: inherit;
+  font-family: inherit;
+  font-size: 18pt;
+}
+
+button:hover {
+  background-color: var(--gray-l2-color);
+  color: var(--gray-d3-color);
+}
+
+button:active {
+  background-color: var(--black-b-color);
+  border-color: var(--white-b-color);
+  color: var(--white-b-color);
+}
+
+.btn-operator {
+  background-color: var(--gray-d2-color);
+}
+
+.btn-special {
+  flex: 1 0;
+  background-color: var(--white-b-color);
+  color: var(--gray-d3-color);
+}
+
+.btn-special:hover {
+  background-color: var(--gray-d3-color);
+  color: var(--white-b-color);
+}
+
+.btn-special:active {
+  background-color: var(--black-b-color);
+  border-color: var(--white-b-color);
+  color: var(--white-b-color);
+}
+
+.btn-equals {
+  flex: 1 0;
+  background-color: var(--gray-d2-color);
+}
+
+#calc-container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: space-between;
+  flex: 0 0 400px;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: var(--white-b-color);
+  gap: 15px;
+}
+
+#display-container {
+  display: flex;
+  flex: 1 0 100px;
+  flex-direction: column;
+  background-color: var(--gray-d3-color);
+  color: var(--white-b-color);
+  padding: 5px;
+  color: var(--black-b-color);
+}
+
+#display-inputs {
+  display: flex;
+  flex-direction: row;
+  flex: 2 0;
+  text-align: right;
+}
+
+#display-input-operand {
+  background-color: var(--gray-b-color);
+  flex: 6 0;
+  align-content: flex-end;
+  font-size: 34pt;
+}
+
+#display-calculation {
+  background-color: var(--gray-b-color);
+  align-content: flex-end;
+  text-align: right;
+  padding-right: 5px;
+  flex: 1 0;
+  font-size: 14pt;
+}
+
+#display-operator {
+  background-color: var(--gray-b-color);
+  flex: 1 0;
+  align-content: center;
+  text-align: center;
+  font-size: 28pt;
+}
+
+#button-container {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1;
+  gap: 15px;
+}
+
+.row {
+  display: flex;
+  flex: 0 1;
+  justify-content: space-between;
+  gap: 20px;
+}

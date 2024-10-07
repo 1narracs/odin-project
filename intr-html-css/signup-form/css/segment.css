@@ -1,0 +1,22 @@
+/**
+* @license
+*
+* Font Family: Segment
+* Designed by: Frode Helland
+* URL: https://www.fontshare.com/fonts/segment
+* © 2024 Indian Type Foundry
+*
+* Segment Regular 
+
+*
+*/
+@font-face {
+  font-family: 'Segment-Regular';
+  src: url('../fonts/Segment-Regular.woff2') format('woff2'),
+       url('../fonts/Segment-Regular.woff') format('woff'),
+       url('../fonts/Segment-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+

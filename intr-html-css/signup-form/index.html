@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/logo.svg" />
+    <title>ODIN - Signup</title>
+  </head>
+  <body>
+    <div class="container-left">
+      <div class="banner-text-box">
+        <object
+          type="image/svg+xml"
+          data="img/logo.svg"
+          class="logo"
+          color="white"
+        >
+          ΔΔΔ
+        </object>
+        ODIN
+      </div>
+      <div class="invisi-div"></div>
+    </div>
+    <div class="container-right">
+      <div class="hero-box">
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realise you deepest dreams. Sign up
+          <i>now</i> to get started.
+        </p>
+        <p class="lower-hero-text">You <i>know</i> you want to.</p>
+      </div>
+
+      <div class="form-box">
+        <h2 class="form-title">Let's do this!</h2>
+        <form action="#" method="post" class="form" name="signup">
+          <div class="form-col">
+            <div class="form-field">
+              <label for="fname">FIRST NAME</label>
+              <input type="text" name="fname" placeholder="First Name" />
+            </div>
+            <div class="form-field">
+              <label for="email">EMAIL</label>
+              <input type="email" name="email" placeholder="Email" />
+            </div>
+            <div class="form-field">
+              <label for="password">PASSWORD</label>
+              <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                pattern=".{8,}"
+              />
+            </div>
+          </div>
+          <div class="form-col">
+            <div class="form-field">
+              <label for="lname">LAST NAME</label>
+              <input type="text" name="lname" placeholder="Last Name" />
+            </div>
+            <div class="form-field">
+              <label for="phonenumber">PHONE NUMBER</label>
+              <input
+                type="text"
+                name="phonenumber"
+                placeholder="Phone Number"
+                pattern="[0-9]{7,11}"
+              />
+            </div>
+            <div class="form-field">
+              <label for="password-confirm">CONFIRM PASSWORD</label>
+              <input
+                type="password"
+                name="password-confirm"
+                placeholder="Password"
+                pattern=".{8,}"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="input-box">
+        <button type="submit" form="signup" class="btn-signup">
+          Create Account
+        </button>
+        <div class="login-text">
+          Already have an account? <a href="#">Log in</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
