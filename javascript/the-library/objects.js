@@ -107,6 +107,7 @@ function removeBook(id) {
 }
 
 function readBook(id) {
-  myLibrary[myLibrary.findIndex((book) => book.id === parseInt(id))].read = true;
+  myLibrary[myLibrary.findIndex((book) => book.id === parseInt(id))].read =
+    !myLibrary[myLibrary.findIndex((book) => book.id === parseInt(id))].read;
   updateBookShelf();
 }
