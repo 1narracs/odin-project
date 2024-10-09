@@ -1,3 +1,7 @@
+let gameBoardElement = document.querySelector(".game-board");
+let squareElements = document.querySelectorAll(".square");
+let playerPanelElements = document.querySelectorAll(".player-panel");
+
 function Player(name, marker) {
   let score = 0;
 
@@ -15,8 +19,8 @@ const gameBoard = (function () {
   const getSquare = (num) => board[num];
 
   const markSquare = (num, player) => {
-    // console.log(`${player.name} marks square ${num}.`);
     board[num] = player.marker;
+    squareElements[num].innerHTML = player.marker;
   };
 
   const checkWin = (player) => {
@@ -43,7 +47,10 @@ const gameBoard = (function () {
     return board.every((square) => square !== "");
   };
 
-  const resetGame = () => (board = new Array(9).fill(""));
+  const resetGame = () => {
+    board = new Array(9).fill("");
+    squareElements.forEach((element) => (element.innerHTML = ""));
+  };
 
   return { getBoard, getSquare, markSquare, checkWin, checkDraw, resetGame };
 })();
@@ -54,25 +61,24 @@ const gameController = (() => {
 
   let currentPlayer = Player1;
 
+  const getPlayers = () => [Player1, Player2];
+
+  const getCurrentPlayer = () => currentPlayer;
+
   const switchPlayer = () => {
-    // console.log("--- Switching player ---");
     currentPlayer = currentPlayer === Player1 ? Player2 : Player1;
-    // console.log(`${currentPlayer.name}'s turn`);
   };
 
   const makeMove = (square) => {
     if (gameBoard.getSquare(square) === "") {
       gameBoard.markSquare(square, currentPlayer);
-      // console.log(`postion after move ${gameBoard.getBoard()}`);
 
       if (gameBoard.checkWin(currentPlayer)) {
-        // console.log(`~~~ ${currentPlayer.name} wins! ~~~`);
         endGame();
         return;
       }
 
       if (gameBoard.checkDraw()) {
-        // console.log(`~~~ it's a draw. ~~~`);
         endGame();
         return;
       }
@@ -88,14 +94,20 @@ const gameController = (() => {
     currentPlayer = Player1;
   };
 
-  return { switchPlayer, makeMove, endGame };
+  return { getPlayers, getCurrentPlayer, switchPlayer, makeMove, endGame };
 })();
 
-/// TESTING ///
-gameController.makeMove(0);
-gameController.makeMove(0);
-gameController.makeMove(3);
-gameController.makeMove(1);
-gameController.makeMove(4);
-gameController.makeMove(2);
-gameController.makeMove(5);
+squareElements.forEach((square, idx) => {
+  square.addEventListener("click", () => {
+    console.log(`${square} clicked`);
+    gameController.makeMove(idx);
+  });
+});
+
+playerPanelElements.forEach((element, idx) => {
+  element.innerHTML = `${
+    gameController.getPlayers()[idx].name
+  }: <span class="font-comico">${
+    gameController.getPlayers()[idx].marker
+  }</span>`;
+});
