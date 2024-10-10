@@ -1,13 +1,49 @@
+:root {
+  --eggshell: #f0ead6;
+  --eggyolk: #ffff00;
+}
+
 body {
   display: flex;
   flex-direction: column;
-  font-family: "Chubbo", sans-serif;
   align-items: center;
-  background-color: #F0EAD6;
+  background-color: var(--eggshell);
 }
 
 .font-comico {
   font-family: "Comico", cursive;
+}
+
+.font-chubbo {
+  font-family: "Chubbo", sans-serif;
+}
+
+.header {
+  font-size: 4rem;
+  padding-bottom: 32px;
+}
+
+.info-panel {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  padding-bottom: 40px;
+}
+
+.info-panel > div {
+  padding: 0 10px;
+}
+
+.info-panel > div:nth-of-type(1) {
+  border-bottom: 2px solid black;
+  border-right: 2px dotted black;
+}
+
+.info-panel > div:nth-of-type(2) {
+  border-bottom: 2px solid black;
+}
+
+.info-panel > div:nth-of-type(3) {
+  border-right: 2px dotted black;
 }
 
 .game-board {
@@ -94,4 +130,59 @@ body {
 .line:nth-of-type(4) {
   grid-row: 4 / 5;
   grid-column: 1 / 6;
+}
+
+.end-game-modal {
+  display: flex; /* Hidden by default */
+  justify-content: center;
+  align-items: flex-start;
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: #ffff005e; /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--eggshell);
+  margin-top: 15%; /* 15% from the top and centered */
+  padding: 20px;
+  border: 4px solid black;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 25px;
+  flex: 0 0 15%;
+}
+
+.modal-box > p {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.close-modal {
+  flex: 0;
+  color: black;
+  background-color: var(--eggyolk);
+  float: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+  background-color: var(--eggshell);
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
