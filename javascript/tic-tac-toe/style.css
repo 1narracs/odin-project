@@ -31,6 +31,7 @@ body {
 
 .info-panel > div {
   padding: 0 10px;
+  font-size: 1.25rem;
 }
 
 .info-panel > div:nth-of-type(1) {
@@ -133,7 +134,7 @@ body {
 }
 
 .end-game-modal {
-  display: flex; /* Hidden by default */
+  display: none; /* Hidden by default */
   justify-content: center;
   align-items: flex-start;
   position: fixed; /* Stay in place */
@@ -161,6 +162,7 @@ body {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 25px;
   flex: 0 0 15%;
+  min-width: 200px;
 }
 
 .modal-box > p {
