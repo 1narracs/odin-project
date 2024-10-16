@@ -3,7 +3,7 @@ import "./App.css";
 import PersonalInput from "./components/PersonalInput";
 import EduInput from "./components/EduInput";
 import WorkInput from "./components/WorkInput";
-import CvDisplay from "./components/CVDisplay";
+import CvDisplay from "./components/CvDisplay";
 import SideBar from "./components/SideBar";
 
 function App() {
