@@ -1,0 +1,51 @@
+.display-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.display-title {
+  padding: 24px 0;
+}
+
+.cv-container {
+  font-family: Supreme-Variable, Arial, Helvetica, sans-serif;
+  padding: 48px 62px;
+  width: min(1240px, 90%);
+  min-height: 85vh;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  color: black;
+}
+
+hr {
+  border: 1px dashed rgb(4,0,255);
+}
+
+.cv-container > div {
+  width: 100%;
+}
+
+.edu-display, .work-display {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.section-header {
+  padding-top: 12px;
+  text-decoration: underline;
+  width: 100%;
+  font-size: 2.75rem;
+}
+
+.cv-item-btns {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-update {
+  margin: 4px;
+  padding: 2px 6px;
+}

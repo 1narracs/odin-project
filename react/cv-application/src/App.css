@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  padding: 4px;
+  background-color: white;
+  font-size: 1.25rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+#root {
+  display: grid;
+  grid-template-columns: auto 3fr;
+  width: 100vw;
+  height: 100vh;
+  transition: all 0.1s ease-in;
+}

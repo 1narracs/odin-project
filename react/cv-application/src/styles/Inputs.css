@@ -1,0 +1,52 @@
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+  border-bottom: 2px dotted white;
+  border-top: 2px dotted white;
+  transition: 0.5s;
+}
+
+.input-container input,
+textarea {
+  padding-top: 6px;
+  font-size: 0.85rem;
+  font-family: Supreme-Variable;
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px solid white;
+  &:focus {
+    outline: none;
+  }
+}
+
+.input-container input.invalid,
+textarea.invalid {
+  border-bottom: 1px solid #ff0000;
+
+  &::placeholder {
+    color: rgb(255, 105, 105);
+  }
+}
+
+.date-input-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+  & input {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+
+  & label {
+    font-size: 0.8rem;
+    text-align: left;
+    font-weight: 600;
+    align-self: end;
+
+    &.invalid {
+      color: red;
+    }
+  }
+}
