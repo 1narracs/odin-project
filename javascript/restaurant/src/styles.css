@@ -1,0 +1,49 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 36px;
+}
+
+.nav-btn {
+  padding: 8px 16px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 1.25rem;
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+
+  &:active {
+    background-color: white;
+    color: black;
+  }
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+  padding: 48px;
+  gap: 24px;
+}
+
+img {
+  width: 480px;
+}
+
+p {
+  margin: 0;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
