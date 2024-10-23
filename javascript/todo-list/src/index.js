@@ -161,7 +161,7 @@ const domController = (() => {
     projectDiv.append(projectTodoDiv);
   };
 
-  const renderTodos = () => {
+  const renderContent = () => {
     //reset content div
     content.innerHTML = "";
     projects.map((proj) => appendProject(proj));
@@ -195,13 +195,13 @@ const domController = (() => {
     saveToLocalStorage(projects);
   }
   // Render saved/default todos on page load
-  renderTodos();
+  renderContent();
 
   // Add new todo
   addBtn.addEventListener("click", () => {
     if (validateInputs()) {
       initialiseNewTodo();
-      renderTodos();
+      renderContent();
     }
   });
 })();
