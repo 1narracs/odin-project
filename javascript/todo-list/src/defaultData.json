@@ -1,0 +1,60 @@
+[
+  {
+    "name": "Home",
+    "todos": [
+      {
+        "title": "Walk Roger",
+        "desc": "Take the dog for a walk",
+        "dueDate": "11/11/2024",
+        "prio": "High",
+        "notes": "Remember his leash",
+        "checked": false
+      },
+      {
+        "title": "Buy Groceries",
+        "desc": "Need food for the week",
+        "dueDate": "13/11/2024",
+        "prio": "Medium",
+        "notes": "Don't forget coupons!",
+        "checked": false
+      },
+      {
+        "title": "Book Holiday",
+        "desc": "Purchase flights and hotels",
+        "dueDate": "17/11/2024",
+        "prio": "Low",
+        "notes": "",
+        "checked": false
+      }
+    ]
+  },
+  {
+    "name": "Work",
+    "todos": [
+      {
+        "title": "Client Meeting",
+        "desc": "Mr Johnson @ BusinessCorp",
+        "dueDate": "11/11/2024",
+        "prio": "High",
+        "notes": "This guy is stressful, leave time to mentally prepare",
+        "checked": false
+      },
+      {
+        "title": "New Trainee",
+        "desc": "Prepare training document",
+        "dueDate": "12/11/2024",
+        "prio": "Medium",
+        "notes": "Just copy paste from the last one...",
+        "checked": true
+      },
+      {
+        "title": "Ask for leave",
+        "desc": "Call the boss and ask for leave before booking holiday",
+        "dueDate": "16/11/2024",
+        "prio": "Low",
+        "notes": "Call after lunch, he's less grumpy then...",
+        "checked": false
+      }
+    ]
+  }
+]

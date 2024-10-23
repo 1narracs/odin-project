@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
+    <title>Todos</title>
+  </head>
+  <body>
+    <h2>todos.</h2>
+    <div id="input-container">
+      <div class="input-section">
+        <label for="title">title.</label>
+        <input type="text" name="title" id="title-input" />
+      </div>
+      <div class="input-section">
+        <label for="desc">description.</label>
+        <textarea name="desc" id="desc-input"></textarea>
+      </div>
+
+      <div class="input-section">
+        <label for="due-date">due date.</label>
+        <input type="date" name="due-date" id="due-date-input" />
+      </div>
+      <div class="input-section">
+        <label for="prio">priority.</label>
+        <select name="prio" id="prio">
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+      </div>
+      <div class="input-section">
+        <label for="notes">notes.</label>
+        <textarea name="notes" id="notes"></textarea>
+      </div>
+      <div class="input-section">
+        <label for="complete">complete?.</label>
+        <input type="checkbox" name="complete" id="complete" />
+      </div>
+      <div class="input-section">
+        <label for="project">project.</label>
+        <input type="text" name="project" id="project-input" list="projects" />
+        <datalist id="projects">
+          <option value="Test"></option>
+        </datalist>
+      </div>
+      <button id="add-todo">+ Add</button>
+    </div>
+    <div id="content"></div>
+  </body>
+</html>
