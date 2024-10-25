@@ -77,3 +77,9 @@ goBtn.addEventListener("click", async (e) => {
 });
 
 tempType.addEventListener("change", () => updateWeatherDiv(currData));
+
+// Default data
+const defaultRender = (async () => {
+  const londonWeather = await getWeatherIn("London");
+  updateWeatherDiv(londonWeather);
+})();
