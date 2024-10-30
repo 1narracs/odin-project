@@ -7,6 +7,7 @@ const weatherContainer = document.querySelector(".weather-container");
 const cityDisp = document.querySelector(".city");
 const countryDisp = document.querySelector(".country");
 const tempDisp = document.querySelector(".temp");
+const iconDisp = document.querySelector("#wicon");
 const conditionsDisp = document.querySelector(".conditions");
 const humidityDisp = document.querySelector(".humidity");
 const descDisp = document.querySelector(".desc");
@@ -23,6 +24,7 @@ function processData(data) {
     celcius: toCelsius(data.currentConditions.temp),
     conditions: data.currentConditions.conditions,
     humidity: data.currentConditions.humidity,
+    icon: data.currentConditions.icon,
   };
   currData = processedData;
   return processedData;
@@ -57,6 +59,10 @@ function updateWeatherDiv(data) {
       tempDisp.innerHTML = `${data.fahrenheit}°F`;
       break;
   }
+  iconDisp.setAttribute(
+    "src",
+    `./imgs/${data.icon}.svg`
+  );
 }
 
 function handleError(err) {
