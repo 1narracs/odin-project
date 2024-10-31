@@ -27,7 +27,15 @@ body {
   padding: 12px 24px;
   border-radius: 12px;
   font-size: 1.4rem;
+  & > button, select {
+    font-size: 1rem;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+  }
 }
+
+
 
 input[type="text"] {
   border: none;
@@ -69,6 +77,8 @@ input[type="text"] {
 }
 .desc {
   font-style: italic;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 #wicon {
   max-width: max(7.5vw, 75px);
