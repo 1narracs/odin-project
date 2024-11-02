@@ -117,6 +117,7 @@ class LinkedList {
       this.head = this.head.next;
       return;
     }
+    if (index >= this.getSize()) return "Index out of bounds.";
     let i = 0;
     let curr = this.head;
     let prev = null;
@@ -152,7 +153,6 @@ class Node {
 
 // example uses class syntax - adjust as necessary
 const list = new LinkedList();
-
 list.append("dog");
 list.append("cat");
 list.append("parrot");
@@ -189,5 +189,8 @@ list.removeAt(0);
 console.log(list.toString());
 console.log(list.getSize());
 list.removeAt(3);
+console.log(list.toString());
+console.log(list.getSize());
+console.log(list.removeAt(7));
 console.log(list.toString());
 console.log(list.getSize());
