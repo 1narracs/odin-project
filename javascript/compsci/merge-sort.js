@@ -1,5 +1,5 @@
 const testArray = Array.from({ length: 100 }, () =>
-  Math.floor(Math.random() * 5)
+  Math.floor(Math.random() * 100)
 );
 
 console.log(testArray);
