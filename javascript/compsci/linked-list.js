@@ -1,4 +1,4 @@
-class LinkedList {
+export default class LinkedList {
   constructor() {
     this.head = null;
   }
@@ -151,46 +151,46 @@ class Node {
   }
 }
 
-// example uses class syntax - adjust as necessary
-const list = new LinkedList();
-list.append("dog");
-list.append("cat");
-list.append("parrot");
-list.append("hamster");
-list.append("snake");
-list.append("turtle");
-console.log(list.getHead());
-console.log(list.getTail());
-console.log(list.getSize());
-console.log(list.toString());
-console.log("pop!!");
-list.pop();
-console.log(list.getSize());
-console.log(list.toString());
-console.log(list.contains("imposter"));
-console.log(list.find("imposter"));
-list.prepend("coyote");
-list.prepend("chicken");
-list.append("imposter");
-console.log(list.getSize());
-console.log(list.toString());
-console.log(list.contains("imposter"));
-console.log(list.find("imposter"));
-console.log(list.find("chicken"));
-console.log(list.toString());
-console.log(list.getSize());
-list.insertAt("lion", 0);
-console.log(list.toString());
-console.log(list.getSize());
-list.insertAt("bear", 3);
-console.log(list.toString());
-console.log(list.getSize());
-list.removeAt(0);
-console.log(list.toString());
-console.log(list.getSize());
-list.removeAt(3);
-console.log(list.toString());
-console.log(list.getSize());
-console.log(list.removeAt(7));
-console.log(list.toString());
-console.log(list.getSize());
+// // example uses class syntax - adjust as necessary
+// const list = new LinkedList();
+// list.append("dog");
+// list.append("cat");
+// list.append("parrot");
+// list.append("hamster");
+// list.append("snake");
+// list.append("turtle");
+// console.log(list.getHead());
+// console.log(list.getTail());
+// console.log(list.getSize());
+// console.log(list.toString());
+// console.log("pop!!");
+// list.pop();
+// console.log(list.getSize());
+// console.log(list.toString());
+// console.log(list.contains("imposter"));
+// console.log(list.find("imposter"));
+// list.prepend("coyote");
+// list.prepend("chicken");
+// list.append("imposter");
+// console.log(list.getSize());
+// console.log(list.toString());
+// console.log(list.contains("imposter"));
+// console.log(list.find("imposter"));
+// console.log(list.find("chicken"));
+// console.log(list.toString());
+// console.log(list.getSize());
+// list.insertAt("lion", 0);
+// console.log(list.toString());
+// console.log(list.getSize());
+// list.insertAt("bear", 3);
+// console.log(list.toString());
+// console.log(list.getSize());
+// list.removeAt(0);
+// console.log(list.toString());
+// console.log(list.getSize());
+// list.removeAt(3);
+// console.log(list.toString());
+// console.log(list.getSize());
+// console.log(list.removeAt(7));
+// console.log(list.toString());
+// console.log(list.getSize());
