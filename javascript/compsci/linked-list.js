@@ -9,7 +9,6 @@ export default class LinkedList {
       this.head = node;
     } else {
       let curr = this.head;
-      console.log(curr);
       while (curr.next) {
         curr = curr.next;
       }
